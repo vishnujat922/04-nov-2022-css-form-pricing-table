@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>css pricing table design</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            body{
+                background: #E7E7E7;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0px;    
+            }
+            .pricing_table_box{
+                width: 80%;
+                height: 498px;
+                margin: 50px auto;
+                clear: both;
+                text-align: center;
+            }
+            .pricing_box{
+                width:29.1%;
+                height:100%;
+                float:left;
+                background: #fff; 
+                border-top-left-radius: 100px; 
+                border-bottom-right-radius: 150px;  
+                box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.1);
+                position: relative;
+            }
+            .pricing_table_box > div:nth-child(2){
+                margin: 0px 60px;
+            }
+            .pricing_box ul{
+                list-style: none;
+                padding:0px;
+                width: 60%;
+                margin: 80px auto;
+            }
+            .pricing_box ul > li{
+                height: 50px;
+                line-height: 50px;
+                border-bottom: 1px solid#E3E3E3 ;
+            }
+            .green{
+                color:green;
+            }
+            .red{
+                color:red;
+            } 
+            .sectionbtn{
+                border: none;
+                padding: 15px 80px;
+                color: #fff;
+                position: absolute;
+                top:50px;
+                right:-27px;
+                border-radius: 2px;
+                z-index:2000;    
+            }
+            .parallelogram2 {
+                width: 70px;
+                height: 35px;
+                transform: skew(-35deg);
+                position: absolute;
+                top:95px;
+                right:-14px;
+                z-index: -1000;
+}  
+            .selectbtn{
+                border: none;
+                padding: 15px 80px;
+                color: #fff;
+                position: absolute;
+                bottom:50px;
+                left:-27px;
+                border-radius: 2px;
+                z-index:2000;     
+            }
+            .parallelogram {
+                width: 70px;
+                height: 35px;
+                transform: skew(-35deg);
+                position: absolute;
+                bottom:95px;
+                left:-14px;
+                z-index: -1000;
+}
+        </style>
+    </head>
+    <body>
+        <div class="pricing_table_box">
+            <div class="pricing_box">
+                <h1 style="color: #FE0830; margin: 10px auto;">Basic</h1>
+                <button class="sectionbtn"style="background:#FE0830">$ 2.99</button>
+                <div class="parallelogram2"style="background:#FE0830"></div>
+                <ul>
+                    <li><i class="fa-solid fa-check green"></i>Sample Text Here</li>
+                    <li><i class="fa-solid fa-xmark red"></i>Other Text Title</li>
+                    <li><i class="fa-solid fa-xmark red"></i>Text Space Goes Here</li>
+                    <li><i class="fa-solid fa-xmark red"></i>Discription Space</li>
+                    <li><i class="fa-solid fa-xmark red"></i>Sample Text Here</li>
+                </ul>
+                <button class="selectbtn"style="background:#FE0830">Select</button>
+                <div class="parallelogram"style="background:#FE0830"></div>   
+            </div>
+            <div class="pricing_box">
+                <h1 style="color: #0150AC;margin: 10px auto;">Standard</h1>
+                <button class="sectionbtn"style="background:#0150AC">$ 5.99</button>
+                <div class="parallelogram2"style="background:#014295"></div> 
+                <ul>
+                    <li><i class="fa-solid fa-check green"></i>Sample Text Here</li>
+                    <li><i class="fa-solid fa-check green"></i>Other Text Title</li>
+                    <li><i class="fa-solid fa-check green"></i>Text Space Goes Here</li>
+                    <li><i class="fa-solid fa-xmark red"></i>Discription Space</li>
+                    <li><i class="fa-solid fa-xmark red"></i>Sample Text Here</li>
+                </ul> 
+                <button class="selectbtn"style="background:#0150AC">Select</button>
+                    <div class="parallelogram"style="background:#014295"></div>               
+            </div>
+            <div class="pricing_box" style="float:right">
+            <h1 style="color: #009B8B; margin: 5px auto;">Premium</h1>
+            <button class="sectionbtn"style="background:#009B8B;">$ 9.99</button>
+            <div class="parallelogram2"style="background:#005E52;"></div>
+            <ul>
+                <li> <i class="fa-solid fa-check green"></i>Sample Text Here</li>
+                <li> <i class="fa-solid fa-check green"></i>Other Text Title</li>
+                <li><i class="fa-solid fa-check green"></i>Text Space Goes Here</li>
+                <li> <i class="fa-solid fa-check green"></i>Discription Space</li>
+                <li><i class="fa-solid fa-check green"></i>Sample Text Here</li>
+            </ul>
+            <button class="selectbtn"style="background:#009B8B;">Select</button>
+                <div class="parallelogram"style="background:#005E52;"></div>
+        </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+</html>
